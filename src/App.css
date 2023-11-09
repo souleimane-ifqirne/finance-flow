@@ -1,0 +1,58 @@
+.App {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  font-family: 'Ysabeau SC', sans-serif;
+  text-align: center;
+}
+
+@keyframes circle-in-center {
+  from {
+    clip-path: circle(0%);
+  }
+
+  to {
+    clip-path: circle(125%);
+  }
+}
+
+.animate {
+  background-color: #4fa3d1;
+  animation: 5s cubic-bezier(.25, 1, .30, 1) circle-in-center;
+}
+
+.launch {
+  background-color: rgba(40, 44, 52, 0.9);
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+p.active {
+  color: black;
+}
+
+button {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #4fa3d1;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #3d80a4;
+}
