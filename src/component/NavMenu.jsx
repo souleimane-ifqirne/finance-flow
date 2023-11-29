@@ -7,14 +7,19 @@ function NavMenu({ solde, setSolde }) {
     return (
         <>
             <div className='navbar'>
-                <div>
-                    <h2>Finance Flow</h2>
-                </div>
+                <h2 style={styles.title}>Finance Flow</h2>
             </div>
             <Debug solde={solde} setSolde={setSolde} />
         </>
     );
 }
+
+const styles = {
+    title: {
+        color: 'white',
+    }
+};
+
 
 export default NavMenu;
 
